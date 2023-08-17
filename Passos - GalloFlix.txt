@@ -405,7 +405,7 @@ public class AppDbSeed
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "GalloFlix": "server=localhost;port=3306;database=galloflix;uid=root;pwd=''"
+    "GalloFlix": "server=localhost;port=3306;database=GalloTube;uid=root;pwd=''"
   }
 }
 
