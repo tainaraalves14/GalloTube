@@ -17,7 +17,5 @@ namespace GalloTube.Models
 
         [StringLength(200)]
         public string ProfilePicture { get; set; }
-
-
     }
 }

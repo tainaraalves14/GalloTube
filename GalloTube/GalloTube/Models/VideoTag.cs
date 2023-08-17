@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GalloTube.Models
 {
-    public class Video
+    public class VideoTag
     {
         public int VideoId { get; set; }
 

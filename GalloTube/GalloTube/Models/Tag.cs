@@ -1,17 +1,19 @@
-using System.ComponentModel.DataAnnotations.Schema;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GalloTube.Models
 {
-    public class VideoTag
+    public class Tag
     {
         public int Id { get; set; }
-
-        [ForeignKey("Video")]
-        public int VideoId { get; set; }
-        public Video Video { get; set; }
-
-        [ForeignKey("Tag")]
-        public int TagId { get; set; }
-        public Tag Tag { get; set; }
+        
+        [Required]
+        [StringLength(30)]
+        public string Name { get; set; }
+        
     }
 }
+
+
+
