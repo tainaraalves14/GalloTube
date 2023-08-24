@@ -30,7 +30,17 @@ namespace GalloTube.Models
         [StringLength(200)]
 
         public string VideoFile { get; set; }
-       
-        
+
+        [NotMapped]
+        [Display(Name = "Classificação Etária")]
+        public string Classification
+        {
+            get
+            {
+                return AgeRating == 0 ? "Livre" : AgeRating + " anos";
+            }
+        }
+
+
     }
 }
